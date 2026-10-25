@@ -739,17 +739,24 @@ body {
 
 .folder-description {
   display: none;
-  margin: -4px 0 14px;
-  padding: 14px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.68);
-  border-radius: 14px;
-  background: var(--mo-surface, rgba(255, 255, 255, 0.72));
-  backdrop-filter: blur(16px) saturate(150%);
-  -webkit-backdrop-filter: blur(16px) saturate(150%);
-  box-shadow: 0 8px 22px -8px rgba(37, 47, 64, 0.16);
-  color: #4f5b6c;
-  font-size: 13px;
-  line-height: 1.7;
+  margin: 18px 0 24px;
+  padding: 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-left: 4px solid var(--primary, #168df2);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  box-shadow: 0 10px 30px -8px rgba(37, 47, 64, 0.16), 0 2px 6px -1px rgba(37, 47, 64, 0.06);
+  color: #1e293b !important;
+  font-size: 14.5px !important;
+  line-height: 1.8 !important;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  word-break: break-word;
 }
 
 .folder-description.is-visible {
@@ -762,6 +769,85 @@ body {
 
 .folder-description > :last-child {
   margin-bottom: 0;
+}
+
+.folder-description,
+.folder-description.announcement-body,
+.folder-description p,
+.folder-description.announcement-body p {
+  color: #1e293b !important;
+  font-size: 14.5px !important;
+  line-height: 1.8 !important;
+  font-weight: 450;
+}
+
+.folder-description p,
+.folder-description.announcement-body p {
+  margin: 0 0 10px;
+}
+
+.folder-description strong,
+.folder-description b,
+.folder-description.announcement-body strong {
+  color: #0f172a !important;
+  font-weight: 600;
+}
+
+.folder-description h1,
+.folder-description h2,
+.folder-description h3,
+.folder-description h4,
+.folder-description.announcement-body h2,
+.folder-description.announcement-body h3,
+.folder-description.announcement-body h4 {
+  color: #0f172a !important;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 14px 0 8px;
+}
+
+.folder-description h1 { font-size: 18px !important; }
+.folder-description h2, .folder-description.announcement-body h2 { font-size: 17px !important; }
+.folder-description h3, .folder-description.announcement-body h3 { font-size: 15.5px !important; }
+.folder-description h4, .folder-description.announcement-body h4 { font-size: 14.5px !important; }
+
+.folder-description a,
+.folder-description.announcement-body a {
+  color: #0284c7 !important;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.folder-description a:hover,
+.folder-description.announcement-body a:hover {
+  color: #0369a1 !important;
+}
+
+.folder-description code,
+.folder-description.announcement-body code {
+  padding: 2px 6px;
+  border-radius: 5px;
+  background: #f1f5f9 !important;
+  color: #0f766e !important;
+  font-size: 13px !important;
+  border: 1px solid #e2e8f0;
+}
+
+.folder-description ul,
+.folder-description ol,
+.folder-description.announcement-body ul {
+  margin: 0 0 12px;
+  padding-left: 22px;
+  color: #1e293b !important;
+}
+
+.folder-description li,
+.folder-description.announcement-body li {
+  margin: 4px 0;
+  line-height: 1.8;
+  color: #1e293b !important;
 }
 
 .resource-stats {
@@ -1073,6 +1159,20 @@ body {
 }
 
 @media (max-width: 700px) {
+  .folder-description {
+    margin: 14px 0 20px;
+    padding: 16px 18px;
+    border-radius: 12px;
+  }
+
+  .folder-description,
+  .folder-description.announcement-body,
+  .folder-description p,
+  .folder-description.announcement-body p {
+    font-size: 13.5px !important;
+    line-height: 1.75 !important;
+  }
+
   .openlist-shell {
     width: calc(100% - 28px);
   }

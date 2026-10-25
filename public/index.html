@@ -8,7 +8,7 @@
     <meta http-equiv="Expires" content="0" />
     <title>网盘资源库</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/styles.css?v=1.2.6" />
+    <link rel="stylesheet" href="/styles.css?v=1.2.7" />
     <noscript>
       <style>
         /* Without scripting nothing lifts the first-paint gate. */
@@ -47,8 +47,6 @@
           </div>
         </div>
 
-        <section id="folderDescription" class="folder-description announcement-body" aria-label="文件夹简介"></section>
-
         <div class="search-panel">
           <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
           <input id="resourceSearch" class="resource-search" type="text" placeholder="搜索所有文件夹中的资源" aria-label="搜索所有文件夹中的资源" />
@@ -85,6 +83,8 @@
           <div id="desktopGrid" class="desktop-grid" aria-live="polite" aria-busy="true"></div>
           <div id="pagination" class="pagination" aria-label="资源分页"></div>
         </section>
+        <section id="folderDescription" class="folder-description announcement-body" aria-label="文件夹简介"></section>
+
         <details id="thankYouCard" class="thank-you-card">
           <summary class="thank-you-toggle">
             <span class="thank-you-avatar" aria-hidden="true"><i class="fa-solid fa-heart"></i></span>
@@ -119,6 +119,6 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="/app.js?v=1.2.6"></script>
+    <script src="/app.js?v=1.2.7"></script>
   </body>
 </html>
